@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero_heading{
+    left: 41%;
+}
+
+body{
+    background: linear-gradient(rgb(148, 222, 234)  , rgb(200, 191, 244))
+}
+
+.slider-dots{
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-dots button , .slider2-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(77, 75, 75);
+    outline: none;
+}
+
+.slider-dots li.slick-active button , .slider2-dots li.slick-active button {
+    background : rgb(232, 186, 101);
+    width: 12px;
+    height: 12px;
+}
+
+.slider-dots ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upto{
+    position: relative;
+
+}
+
+.upto:after{
+    content : '';
+    position: absolute;
+    left:0;
+    bottom: -1rem;
+    height: 4px;
+    width: 80%;
+    background: rgb(227, 129, 42);
+
+}
+
+.sub-menu{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.menu-trigger.is-open {
+    color: rgb(220, 137, 37);
+}
+.menu-trigger.is-open + .sub-menu{
+    max-height: 100%;
+    overflow: visible;
+}
+
+.box-1{
+    padding: 2rem;
+}
+.box-1 img{
+    margin-top: -2rem;
+}
+.box-2{
+    padding: 2rem;
+}
+.box-2 img{
+    margin-left: 2rem;
+}
+
+.box-3 img{
+    margin-left: -1rem;
+}
+.box-4 img{
+    margin-left: -6rem;
+}
+.box-5{
+    padding: 2rem;
+}
+.box-5 img{
+    margin-left: -3rem;
+}
+.box-6 img{
+    margin-left: -5rem;
+}
+
+.agree_checkbox + label{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.agree_checkbox + label:before{
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50% , -50%);
+}
+
+.agree_checkbox:checked + label:before{
+    background: rgb(231, 124, 41) ;
+}
+
+.slick-slide.slick-center .inner-box{
+    padding: 0 20px;
+}
+.slider2{
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.slick-slide.slick-center .inner-box > div{
+    padding: 50px 0;
+}
+.slick-slide:not(.slick-center){
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}
+
+.slick-slider .inner-box .label{
+    display: none;
+}
+
+.slick-slide.slick-center .inner-box .label{
+    display: block;
+}
+
+.slider2-dots{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50px);
+}
+.slider2-dots ul{
+    display: flex;
+    align-items: center;
+}
+.slider2-dots ul li{
+    margin: 0 10px;
+}
